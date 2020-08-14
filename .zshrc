@@ -74,6 +74,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(git osx npm z zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
@@ -106,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="vi ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias qmk="cd ~/dev/qmk_firmware"
+
 alias cat="bat"
 
 # Functions
@@ -114,14 +115,6 @@ newdir ()
 {
 	mkdir -p -- "$1" && cd -P -- "$1"
 }
-
-function up ()
-{
- level=".."
- for (( i=0;i<$1;i++ )); do level="${level}*/.."; done
- cd "${path}"
-}
-
 
 source ~/.bash_profile 
 
