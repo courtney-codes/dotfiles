@@ -1,7 +1,6 @@
 {
-  "editor.autoIndent": true,
+  "editor.autoIndent": "full",
   "editor.detectIndentation": true,
-  "editor.fontFamily": "FiraCode-Retina",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
@@ -34,8 +33,7 @@
     "editor.formatOnSave": false
   },
   "[typescript]": {
-    "editor.formatOnSave": false,
-    "togglequotes.chars": ["\"", "'", "`"]
+    "editor.formatOnSave": false
   },
   "git.autofetch": true,
   "git.inputValidationLength": 72,
@@ -43,7 +41,7 @@
   "git.confirmSync": false,
   "workbench.startupEditor": "newUntitledFile",
   "git.enableSmartCommit": true,
-  "git.promptToSaveFilesBeforeCommit": false,
+  "git.promptToSaveFilesBeforeCommit": "staged",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -51,7 +49,6 @@
   },
   "eslint.validate": ["javascript", "vue"],
   "workbench.settings.editor": "json",
-  "vetur.validation.template": false,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -81,7 +78,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "One Monokai",
   "diffEditor.ignoreTrimWhitespace": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
