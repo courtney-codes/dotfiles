@@ -109,14 +109,13 @@ alias zshconfig="vi ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias cat="bat"
+alias dc="docker-compose"
 
 # Functions
 newdir () 
 {
 	mkdir -p -- "$1" && cd -P -- "$1"
 }
-
-source ~/.bash_profile 
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
