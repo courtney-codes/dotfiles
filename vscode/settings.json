@@ -1,6 +1,7 @@
 {
   "editor.autoIndent": "full",
   "editor.detectIndentation": true,
+  "editor.fontFamily": "FiraCode-Retina",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
