@@ -4,10 +4,13 @@
   "editor.fontFamily": "FiraCode-Retina",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
-  "editor.tabCompletion": "onlySnippets",
+  "editor.tabCompletion": "on",
+  "explorer.openEditors.visible": 0,
   "emmet.includeLanguages": {
     "vue-html": "html",
     "vue": "html"
@@ -41,6 +44,7 @@
   "window.zoomLevel": 0,
   "git.confirmSync": false,
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "git.enableSmartCommit": true,
   "git.promptToSaveFilesBeforeCommit": "staged",
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -79,7 +83,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "workbench.colorTheme": "One Monokai",
+  "workbench.colorTheme": "Dracula",
   "diffEditor.ignoreTrimWhitespace": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="vi ~/.zshrc"
+alias vimconfig="vi ~/.vimrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias cat="bat"
