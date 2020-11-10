@@ -12,7 +12,7 @@ fi
 export TERM=xterm-256color
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/courtneysenior/.oh-my-zsh"
+export ZSH="/Users/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -75,7 +75,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git osx npm z zsh-autosuggestions)
+plugins=(git osx npm z zsh-autosuggestions docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,23 +110,33 @@ alias vimconfig="vi ~/.vimrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias cat="bat"
-alias dc="docker-compose"
+alias gfza="git fza"
+
+
 
 # Functions
 newdir () 
 {
 	mkdir -p -- "$1" && cd -P -- "$1"
 }
+up () {
+  num=${1:-1}
+  while [ $num -ne 0  ];do
+    cd ..
+    num=$((num-1))
+  done
+}
+
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/courtneysenior/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/courtneysenior/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+[[ -f /Users/$USER/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/$USER/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/courtneysenior/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/courtneysenior/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+[[ -f /Users/$USER/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/$USER/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/courtneysenior/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/courtneysenior/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
+[[ -f /Users/$USER/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/$USER/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
