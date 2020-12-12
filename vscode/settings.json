@@ -1,12 +1,13 @@
 {
   "editor.autoIndent": "full",
   "editor.detectIndentation": true,
-  "editor.fontFamily": "FiraCode-Retina",
+  "editor.fontFamily": "Cascadia Mono PL",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.formatOnSave": true,
+  "window.restoreFullscreen": true,
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.tabCompletion": "on",
@@ -40,7 +41,7 @@
     "editor.formatOnSave": false
   },
   "git.autofetch": true,
-  "git.inputValidationLength": 72,
+  "git.inputValidationSubjectLength": 72,
   "window.zoomLevel": 0,
   "git.confirmSync": false,
   "workbench.startupEditor": "newUntitledFile",
@@ -83,11 +84,15 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "workbench.colorTheme": "Dracula",
-  "diffEditor.ignoreTrimWhitespace": false,
   "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "workbench.colorTheme": "One Monokai",
+  "diffEditor.ignoreTrimWhitespace": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
