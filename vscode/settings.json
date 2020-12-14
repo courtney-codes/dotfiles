@@ -91,9 +91,10 @@
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "One Monokai",
+  "workbench.colorTheme": "Snazzy Plus w/ Italics",
   "diffEditor.ignoreTrimWhitespace": false,
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   }
 }
