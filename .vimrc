@@ -10,5 +10,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-ruby/vim-ruby'
 Plug 'junegunn/goyo.vim'
+Plug 'mrk21/yaml-vim'
 
 call plug#end()
