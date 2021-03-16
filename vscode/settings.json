@@ -6,7 +6,7 @@
   "editor.fontSize": 15,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "window.restoreFullscreen": true,
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
@@ -14,7 +14,8 @@
   "explorer.openEditors.visible": 0,
   "emmet.includeLanguages": {
     "vue-html": "html",
-    "vue": "html"
+    "vue": "html",
+    "django-html": "html",
   },
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "emmet.syntaxProfiles": {
@@ -42,7 +43,6 @@
   },
   "git.autofetch": true,
   "git.inputValidationSubjectLength": 72,
-  "window.zoomLevel": 0,
   "git.confirmSync": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -96,5 +96,16 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
-  }
+  },
+  "liveshare.authenticationProvider": "GitHub",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "python.showStartPage": false
 }

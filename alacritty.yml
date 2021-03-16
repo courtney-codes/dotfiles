@@ -37,3 +37,5 @@ colors:
     cyan:    '0xa3f7ff'
     white:   '0xffffff'
 
+key_bindings:
+  - { key: Key3,     mods: Alt,     chars: "#" }
