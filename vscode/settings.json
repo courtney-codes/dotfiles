@@ -7,6 +7,7 @@
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.formatOnSave": false,
+  "editor.linkedEditing": true,
   "window.restoreFullscreen": true,
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
@@ -24,7 +25,6 @@
       "self_closing_tag": "xhtml"
     }
   },
-  "prettier.disableLanguages": ["js"],
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
   "[javascript]": {
@@ -39,7 +39,8 @@
     "editor.formatOnSave": false
   },
   "[typescript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autofetch": true,
   "git.inputValidationSubjectLength": 72,
@@ -91,21 +92,41 @@
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Snazzy Plus w/ Italics",
+  "workbench.colorTheme": "Snazzy Plus",
   "diffEditor.ignoreTrimWhitespace": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "liveshare.authenticationProvider": "GitHub",
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "[python]": {
+    "gitlens.codeLens.symbolScopes": [
+      "!Module"
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.wordBasedSuggestions": false
+  },
+  "python.defaultInterpreterPath": "/Users/courtneysenior/.local/share/virtualenvs/patch-kpf28yRX/bin/python",
+  "python.linting.lintOnSave": true,  
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "pylint_django",
+    "pylint_celery"
   ],
-  "python.showStartPage": false
+  "python.formatting.provider": "autopep8",
+  "git.ignoreRebaseWarning": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "vsicons.dontShowNewVersionMessage": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  }
 }
