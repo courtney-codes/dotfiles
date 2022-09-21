@@ -109,7 +109,7 @@
       "!Module"
     ],
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnSaveMode": "file",
     "editor.defaultFormatter": "ms-python.python",
     "editor.wordBasedSuggestions": false
   },
@@ -122,11 +122,21 @@
     "pylint_celery"
   ],
   "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Path": "/Users/courtneysenior/.local/share/virtualenvs/dev-SXHolp3N/bin/autopep8",
+  "python.formatting.autopep8Args": [
+    "--max-line-length=88"
+  ],
   "git.ignoreRebaseWarning": true,
   "workbench.editor.untitled.hint": "hidden",
   "vsicons.dontShowNewVersionMessage": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
+  },
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ],
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
