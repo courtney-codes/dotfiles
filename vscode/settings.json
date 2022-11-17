@@ -38,9 +38,12 @@
     "editor.wordBasedSuggestions": false,
     "editor.formatOnSave": false
   },
-  "[typescript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[typescript, typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    },
   },
   "git.autofetch": true,
   "git.inputValidationSubjectLength": 72,
@@ -78,9 +81,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
@@ -92,7 +92,7 @@
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Snazzy Plus",
+  "workbench.colorTheme": "Palenight Theme",
   "diffEditor.ignoreTrimWhitespace": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -137,6 +137,12 @@
     "gitpod.gitpod-remote-ssh"
   ],
   "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
