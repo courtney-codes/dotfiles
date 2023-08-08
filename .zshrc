@@ -75,7 +75,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git git-custom macos npm z zsh-autosuggestions docker-compose)
+plugins=(git git-custom macos npm z zsh-autosuggestions kubectl docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -173,3 +173,5 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+

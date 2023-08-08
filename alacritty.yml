@@ -4,7 +4,6 @@ font:
   normal:
     family: "MesloLGS NF"
   size: 14.0
-  use_thin_strokes: true
 
 # iTerm2 Material Design - Palenight theme for Alacritty
 # Source : https://github.com/JonathanSpeek/palenight-iterm2
