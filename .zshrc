@@ -110,7 +110,7 @@ alias alaconfig="vi ~/.config/alacritty/alacritty.yml"
 alias vimconfig="vi ~/.vimrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias cat="bat"
+alias cat="bat --theme=TwoDark"
 alias ghupdate="brew update && brew upgrade gh"
 
 

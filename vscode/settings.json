@@ -49,6 +49,9 @@
 
     },
   },
+  "[dotenv]": {
+    "editor.defaultFormatter": "IronGeek.vscode-env"
+  },
   "git.autofetch": true,
   "git.inputValidationSubjectLength": 72,
   "git.confirmSync": false,
@@ -76,7 +79,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
   "editor.renderWhitespace": "none",
   "editor.tabSize": 2,
@@ -88,9 +90,7 @@
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
-
-
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "[javascriptreact]": {
     "editor.formatOnSave": false,
@@ -135,7 +135,6 @@
     "--max-line-length=88"
   ],
   "git.ignoreRebaseWarning": true,
-  "workbench.editor.untitled.hint": "hidden",
   "vsicons.dontShowNewVersionMessage": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
@@ -153,5 +152,27 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.iconTheme": "vscode-icons"
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.empty.hint": "hidden",
+  "[c][python]": {
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[javascript][javascriptreact][typescript, typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    }
+  },
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "dotenv.enableAutocloaking": false,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "｜": true
+  },
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hant": true
+  }
 }
