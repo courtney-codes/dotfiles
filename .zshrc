@@ -21,7 +21,6 @@ export ZSH="/Users/$USER/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -75,7 +74,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git git-custom macos npm z zsh-autosuggestions kubectl docker-compose)
+plugins=(git git-custom macos npm z zsh-autosuggestions docker-compose fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,7 +138,7 @@ up () {
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/$USER/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/$USER/.nvm/versions/node/v8.11.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/opt/homebrew/opt/ruby/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -174,4 +173,20 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 

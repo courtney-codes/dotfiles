@@ -33,20 +33,19 @@
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": false
+      "source.organizeImports": "never"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[c]": {
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.formatOnSave": false
   },
   "[typescript, typescriptreact]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": false
-
+      "source.organizeImports": "never"
     },
   },
   "[dotenv]": {
@@ -95,7 +94,7 @@
   "[javascriptreact]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": false
+      "source.organizeImports": "never"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -118,7 +117,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file",
     "editor.defaultFormatter": "ms-python.python",
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.formatOnType": true
   },
   "python.defaultInterpreterPath": "/Users/courtneysenior/.local/share/virtualenvs/patch-kpf28yRX/bin/python",
@@ -174,5 +173,14 @@
   },
   "editor.unicodeHighlight.allowedLocales": {
     "zh-hant": true
-  }
+  },
+  "git.openRepositoryInParentFolders": "always",
+  "kilo-code.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show"
+  ]
 }
